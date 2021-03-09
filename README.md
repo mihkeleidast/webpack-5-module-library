@@ -10,7 +10,10 @@ Repro steps:
 1. `cd app`;
 2. `npm ci`;
 3. `npm start`;
-4. Open `http://localhost:8080/`, see error in console: `test is not a function`
+4. Open `http://localhost:8080/`, see error in console: `Uncaught TypeError: i[e] is not a function`
 
-
-The issue seems to resolve arount the fact that library is bundled with TerserPlugin with `keep_fnames: true`. Probably webpack 5 tries to replace `__webpack_require__` calls but shouldn't in this case?
+Conditions necessary to reproduce the issue:
+- `module` and `library` are bundled with webpack@5
+- `library` is bundled with TerserPlugin with `keep_fnames: true`
+- `library` has a async loaded module
+- `app` is bundled with webpack@4

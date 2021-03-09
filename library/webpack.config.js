@@ -16,7 +16,6 @@ module.exports = {
     minimizer: [
         new TerserPlugin({
             terserOptions: {
-                keep_classnames: true,
                 keep_fnames: true,
             },
         }),
