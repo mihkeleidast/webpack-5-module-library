@@ -1,0 +1,25 @@
+{
+  "name": "@mihkeleidast/webpack-5-module-library",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihkeleidast/webpack-5-module-library.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mihkeleidast/webpack-5-module-library/issues"
+  },
+  "homepage": "https://github.com/mihkeleidast/webpack-5-module-library#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0"
+  }
+}
